@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<h1>{{ title }}</h1>
+
+{% for raamat in raamatud %}
+    <h2>{{ raamat.pealkiri }}</h2>
+    <p>Autor: {{ raamat.autor }}</p>
+    {% if raamat.saadavus %}
+        <p>Saadavus: True</p>
+    {% else %}
+        <p>Saadavus: False</p>
+    {% endif %}
+{% endfor %}
+
+</body>
+</html>

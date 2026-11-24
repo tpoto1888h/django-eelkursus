@@ -1,0 +1,4 @@
+1. Tehtud said kõik kuus ülesannet
+2. Kõige raskem oli mäletada, kui lisan uut lehte, siis panna url ja views. Pidi ka mõtlema, kuna selles õpetuses kasutatakse teistsuguseid nimesid, andmeid ja andmebaasi välju, siis ei saa automaatselt neid kasutada.
+3. Djangos mudelid on, kus on andmebaasi tabelid, mis hoiavad välja andmetüüpe. Views võtab vastu http requeste ja mallid kuvavad HTML-i  dokumendil mida talle on kirjutatud.
+4. Andmed liiguvad nii, URL suunab päringu views.py funktsiooni, pärignud, nt `Book.objects.filter(...)` loeb andmebaasist vajalikud andmed, views annab  `context` muutujana mallile ja mall kuvab need HTML-is. Nagu näiteks `mydata = Book.objects.filter(autor='Yu Mi').values()`.

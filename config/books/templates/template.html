@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <p>The queryset results:</p>
+    {{mybooks}}
+
+<table border='1'>
+    <tr>
+        <th>Pealkiri</th>
+        <th>Autor</th>
+        <th>Saadavus</th>
+        <th>Zanr</th>
+    </tr>
+    {% for book in mybooks %}
+    <tr>
+        <td>{{ book.pealkiri }}</td>
+        <td>{{ book.autor }}</td>
+        <td>{{ book.saadavus }}</td>
+        <td>{{ book.zanr }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
